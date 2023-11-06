@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>
+            Indian Railway Services 
+        </title>
+        <link rel="stylesheet" href="1.css">
+        <script>
+            function validateform() {
+               // prompt(" Hello ");
+                let name = document.myform.name.value;
+                let password = document.myform.password.value;
+                if (name == null || name == " ") {
+                    alert("Name can't be blank");
+                    
+                } else if (name == "Prathamesh" && password =="12345") {
+                    alert("You have sucessfully logged in.");    
+                    confirm("Welcome" );
+                    let code=prompt(" Enter the code here ");
+                }
+                else
+                {
+                    alert("Validation Failed !!!");    
+                }
+            }  
+        </script>
+    </head>
+    <body>
+        <marquee width="79%" direction="right" height="35%"> <b> <h3> INDIAN &emsp;RAILWAY &emsp;SERVICES   <br>
+            <img src="/online-pnr-status-logo.jpg"/>
+            <h3>
+                <marquee direction="left" width="70%" height="35%"> <b> LOGIN   &emsp; PAGE </b> </marquee>
+            </h3>
+        </h3> </b> 
+        </marquee>
+        <img src="/G20_Logo.png" align="left" />
+        <img src="/logo_top_eng.jpg" align="right"/>
+        <a href="/index.html"><button style="font-size: medium;">Home</button></a>
+        <a href="/2.html"><button style="font-size: medium;">Ticket Booking</button></a>
+        <a href="/3.html"><button style="font-size: medium;">PNR Enquiry</button></a>
+        <a href="/4.html"><button style="font-size: medium;">Chart Vacancy</button></a>
+        <a href="/6.html"><button style="font-size: medium;">Chart Enquiry</button></a>
+            <br>
+        <div class="ABC">
+            <form  name="myform" onsubmit="return validateform()">
+                <br>
+                <br>
+                &emsp;&nbsp;Name: &emsp;&nbsp;<input type="text" name="name"><br><br>
+                &emsp;Password: <input type="password" name="password"><br><br>
+                <br>
+                &emsp;&emsp;<input type="submit" value="Register">&emsp;
+                <input type="reset">
+            </form>
+        </div>
+            
+    </body>
+</html>

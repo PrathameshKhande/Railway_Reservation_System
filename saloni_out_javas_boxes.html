@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>JavaScript PopUp Boxes</h2>
+    <button onclick="myfunction()">Try alert</button>
+    <button onclick="myfunction2()">Try confirm</button>
+    <button onclick="myfunction3()">Try prompt</button>
+    </p>
+    <p id="demo"></p>
+    <script>
+        function myfunction() {
+            alert("I am an alert box!");
+        }
+        function myfunction2() {
+            var txt;
+            if (confirm("Press a button!") != null) {
+                alert("I am confirm box!");
+                txt = "You pressed OK!";
+            }
+            else (txt = "You pressed Cancel!")
+                    {
+                document.getElementById("demo").innerHTML = txt;
+            }
+        }
+        function myfunction3() {
+            let person = prompt("Please enter your name", "Harry Potter");
+            let text;
+            if (person == null || person == "") {
+                alert("I am an prompt box!");
+                text = "User cancelled the prompt.";
+            } else {
+                text = "Hello " + person + "! How are you today?";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+body
+{
+    background-image: url(/Background_rail.png);
+    background-size: cover;
+}
+
+.ABC
+{
+    background-color: beige;
+    height: 200px;
+    width: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
